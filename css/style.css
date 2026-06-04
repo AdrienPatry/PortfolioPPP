@@ -57,6 +57,7 @@ nav.scrolled { border-color: var(--border); }
   letter-spacing: 0.01em;
   text-decoration: none;
   color: var(--text);
+  flex-shrink: 0;
 }
 
 .nav-links {
@@ -102,8 +103,7 @@ section {
 .section-label::before {
   content: '';
   display: inline-block;
-  width: 24px;
-  height: 1px;
+  width: 24px; height: 1px;
   background: var(--muted);
 }
 
@@ -203,8 +203,7 @@ section {
 }
 
 .scroll-line {
-  width: 40px;
-  height: 1px;
+  width: 40px; height: 1px;
   background: var(--muted);
   transform-origin: left;
   animation: lineGrow 1.2s 1.2s ease forwards;
@@ -218,40 +217,27 @@ section {
   color: var(--muted);
   line-height: 1.85;
   margin-bottom: 1.25rem;
+  font-size: 1.05rem;
   max-width: 640px;
 }
 
 .about-text p:last-child { margin-bottom: 0; }
-
-.about-text strong {
-  color: var(--text);
-  font-weight: 500;
-}
+.about-text strong { color: var(--text); font-weight: 500; }
 
 /* ================================
    COMPÉTENCES
    ================================ */
-#skills { background: var(--surface); }
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.skills-category {
-  padding: 1.75rem;
-  border: 1px solid var(--border);
-  border-radius: 2px;
+  gap: 2.5rem;
 }
 
 .skills-category h3 {
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-bottom: 1.25rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--border);
 }
 
 .skills-list {
@@ -324,13 +310,11 @@ section {
 
 .project-card {
   background: var(--surface);
-  padding: 2rem 2rem 2rem;
+  padding: 2rem 2rem 2.5rem;
   transition: background 0.2s;
   position: relative;
   overflow: hidden;
   cursor: pointer;
-  display: flex;
-  flex-direction: column;
 }
 
 .project-card::before {
@@ -363,19 +347,18 @@ section {
   margin-bottom: 0.75rem;
 }
 
-.project-card > p {
+.project-card p {
   font-size: 0.9rem;
   color: var(--muted);
   line-height: 1.7;
   margin-bottom: 1.25rem;
-  flex: 1;
 }
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.4rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-tag {
@@ -388,14 +371,12 @@ section {
 
 .project-cta {
   font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--text);
-  letter-spacing: 0.02em;
-  margin-top: auto;
-  transition: letter-spacing 0.2s;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+  transition: color 0.2s;
 }
 
-.project-card:hover .project-cta { letter-spacing: 0.06em; }
+.project-card:hover .project-cta { color: var(--text); }
 
 /* ================================
    MODALES
@@ -405,30 +386,29 @@ section {
   position: fixed;
   inset: 0;
   z-index: 200;
-  background: rgba(26, 26, 24, 0.55);
+  background: rgba(20, 20, 18, 0.55);
   backdrop-filter: blur(4px);
   align-items: center;
   justify-content: center;
   padding: 2rem;
 }
 
-.modal-overlay.open { display: flex; }
+.modal-overlay.open {
+  display: flex;
+  animation: fadeOverlay 0.25s ease;
+}
 
 .modal {
   background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2.5rem;
   max-width: 580px;
   width: 100%;
-  padding: 2.5rem;
-  border-radius: 2px;
   position: relative;
-  animation: modalIn 0.3s ease;
-  max-height: 85vh;
+  animation: slideUp 0.3s ease;
+  max-height: 90vh;
   overflow-y: auto;
-}
-
-@keyframes modalIn {
-  from { opacity: 0; transform: translateY(16px); }
-  to   { opacity: 1; transform: translateY(0); }
 }
 
 .modal-close {
@@ -455,7 +435,7 @@ section {
 
 .modal-title {
   font-family: var(--serif);
-  font-size: 1.8rem;
+  font-size: 1.75rem;
   font-weight: 400;
   line-height: 1.15;
   margin-bottom: 1rem;
@@ -497,7 +477,7 @@ section {
   color: var(--border);
 }
 
-.modal-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+.modal-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
 
 /* ================================
    CONTACT
@@ -533,8 +513,7 @@ section {
 }
 
 .contact-icon {
-  width: 40px;
-  height: 40px;
+  width: 40px; height: 40px;
   border-radius: 50%;
   background: var(--tag-bg);
   display: flex;
@@ -590,6 +569,16 @@ footer {
   to { transform: scaleX(1); }
 }
 
+@keyframes fadeOverlay {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -606,10 +595,10 @@ footer {
    ================================ */
 @media (max-width: 700px) {
   nav { padding: 1rem 1.5rem; }
-  .nav-links { gap: 1rem; }
+  .nav-links { gap: 1rem; font-size: 0.78rem; }
   section { padding: 5rem 1.5rem; }
   #hero { padding: 7rem 1.5rem 3rem; }
-  .skills-grid { grid-template-columns: 1fr; }
+  .skills-grid { grid-template-columns: 1fr; gap: 2rem; }
   .projects-grid { grid-template-columns: 1fr; }
   .formation-item { grid-template-columns: 1fr; gap: 0.5rem; }
   footer { flex-direction: column; gap: 0.5rem; text-align: center; }

@@ -23,14 +23,12 @@ document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
    ================================ */
 function openModal(id) {
   const modal = document.getElementById(id);
-  if (!modal) return;
   modal.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 
 function closeModal(id) {
   const modal = document.getElementById(id);
-  if (!modal) return;
   modal.classList.remove('open');
   document.body.style.overflow = '';
 }
@@ -42,9 +40,9 @@ function closeModalOutside(event, id) {
 // Fermer avec la touche Échap
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
-    document.querySelectorAll('.modal-overlay.open').forEach(modal => {
-      modal.classList.remove('open');
+    document.querySelectorAll('.modal-overlay.open').forEach(m => {
+      m.classList.remove('open');
+      document.body.style.overflow = '';
     });
-    document.body.style.overflow = '';
   }
 });

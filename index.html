@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 <body>
 
@@ -44,7 +45,7 @@
       <h2 class="section-title">Qui suis-je ?</h2>
     </div>
     <div class="about-text reveal reveal-delay-1">
-      <p>Je m'appelle <strong>Adrien Patry</strong>, étudiant en <strong>BUT Informatique</strong> à l'IUT d'Orsay (Université Paris-Saclay).</p>
+      <p>Je m'appelle <strong>Adrien Patry</strong>, étudiant en 1ère année de <strong>BUT Informatique</strong> à l'IUT d'Orsay (Université Paris-Saclay).</p>
       <p>Curieux et rigoureux, j'aime concevoir des solutions logicielles propres et réfléchies. Je m'intéresse aussi bien au développement web qu'à la programmation système et aux bases de données.</p>
       <p>En dehors des cours, j'explore de nouveaux outils, je contribue à de petits projets personnels et je cherche constamment à progresser.</p>
     </div>
@@ -54,7 +55,7 @@
   <section id="skills">
     <div class="reveal">
       <p class="section-label">Compétences</p>
-      <h2 class="section-title">Ce que je maîtrise</h2>
+      <h2 class="section-title">Mes compétences</h2>
     </div>
     <div class="skills-grid">
       <div class="skills-category reveal reveal-delay-1">
@@ -62,30 +63,20 @@
         <div class="skills-list">
           <span class="skill-tag">Python</span>
           <span class="skill-tag">Java</span>
-          <span class="skill-tag">C</span>
-          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">C#</span>
           <span class="skill-tag">HTML / CSS</span>
           <span class="skill-tag">SQL</span>
-        </div>
-      </div>
-      <div class="skills-category reveal reveal-delay-2">
-        <h3>Frameworks & BDD</h3>
-        <div class="skills-list">
-          <span class="skill-tag">Flask</span>
-          <span class="skill-tag">MySQL</span>
-          <span class="skill-tag">PostgreSQL</span>
-          <span class="skill-tag">SQLite</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">GDScript</span>
         </div>
       </div>
       <div class="skills-category reveal reveal-delay-3">
-        <h3>Outils & méthodes</h3>
+        <h3>Langues</h3>
         <div class="skills-list">
-          <span class="skill-tag">Git</span>
-          <span class="skill-tag">GitHub</span>
-          <span class="skill-tag">VS Code</span>
-          <span class="skill-tag">Linux</span>
-          <span class="skill-tag">Agile / Scrum</span>
-          <span class="skill-tag">UML</span>
+          <span class="skill-tag">Français</span>
+          <span class="skill-tag">Anglais</span>
         </div>
       </div>
     </div>
@@ -99,7 +90,7 @@
     </div>
     <div class="formation-list">
       <div class="formation-item reveal reveal-delay-1">
-        <div class="formation-year">2023 — Présent</div>
+        <div class="formation-year">2026 — Présent</div>
         <div class="formation-info">
           <h3>BUT Informatique</h3>
           <p class="school">IUT d'Orsay — Université Paris-Saclay</p>
@@ -107,7 +98,7 @@
         </div>
       </div>
       <div class="formation-item reveal reveal-delay-2">
-        <div class="formation-year">2023</div>
+        <div class="formation-year">2025</div>
         <div class="formation-info">
           <h3>Baccalauréat</h3>
           <p class="school">Spécialité Mathématiques & NSI</p>
@@ -127,53 +118,37 @@
 
       <div class="project-card" onclick="openModal('modal-01')">
         <p class="project-num">01</p>
-        <h3>Application de gestion de tâches</h3>
-        <p>Application web permettant de créer, organiser et suivre des tâches avec authentification utilisateur.</p>
+        <h3>Jeu simple en C++</h3>
+        <p>Jeu simple top-down où le joueur contrôle un personnage pour collecter des objets et éviter les ennemis.</p>
         <div class="project-tags">
-          <span class="project-tag">Python</span>
-          <span class="project-tag">Flask</span>
-          <span class="project-tag">SQL</span>
-          <span class="project-tag">HTML/CSS</span>
+          <span class="project-tag">C++</span>
+          <span class="project-tag">Projet en Groupe</span>
         </div>
         <span class="project-cta">Voir le détail →</span>
       </div>
 
       <div class="project-card" onclick="openModal('modal-02')">
         <p class="project-num">02</p>
-        <h3>Jeu en réseau (Java)</h3>
-        <p>Jeu multijoueur en ligne développé en Java avec gestion des sockets et interface graphique Swing.</p>
+        <h3>Jeu créer a l'occasion d'une Game Jam en Godot</h3>
+        <p>Jeu Solo de peche ou la mechanique principale est le clic</p>
         <div class="project-tags">
-          <span class="project-tag">Java</span>
-          <span class="project-tag">Sockets</span>
-          <span class="project-tag">Swing</span>
+          <span class="project-tag">GDScript</span>
+          <span class="project-tag">Projet en Groupe</span>
         </div>
         <span class="project-cta">Voir le détail →</span>
       </div>
 
       <div class="project-card" onclick="openModal('modal-03')">
         <p class="project-num">03</p>
-        <h3>Interpréteur de commandes</h3>
-        <p>Shell simplifié en C supportant l'exécution de commandes, redirections et gestion de processus.</p>
-        <div class="project-tags">
-          <span class="project-tag">C</span>
-          <span class="project-tag">Linux</span>
-          <span class="project-tag">POSIX</span>
-        </div>
-        <span class="project-cta">Voir le détail →</span>
-      </div>
-
-      <div class="project-card" onclick="openModal('modal-04')">
-        <p class="project-num">04</p>
-        <h3>Site portfolio</h3>
-        <p>Ce portfolio — conçu pour présenter mon parcours, mes compétences et mes projets de façon épurée.</p>
+        <h3>Site d'Agence de Voyage</h3>
+        <p>Site web pour une agence de voyage imaginaire, permettant de promouvoir les destinations et de réserver des voyages.</p>
         <div class="project-tags">
           <span class="project-tag">HTML</span>
           <span class="project-tag">CSS</span>
-          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Projet en Groupe</span>
         </div>
         <span class="project-cta">Voir le détail →</span>
       </div>
-
     </div>
   </section>
 
@@ -185,27 +160,27 @@
     </div>
     <p class="contact-intro reveal">Vous avez un projet, une opportunité de stage ou simplement envie d'échanger ? N'hésitez pas à me contacter.</p>
     <div class="contact-list">
-      <a href="mailto:adrien.patry@example.com" class="contact-item reveal reveal-delay-1">
+      <a href="mailto:adrien.patry@universite-paris-saclay.fr" class="contact-item reveal reveal-delay-1">
         <div class="contact-item-left">
           <div class="contact-icon">✉️</div>
           <div>
             <p class="contact-label">Email</p>
-            <p class="contact-value">adrien.patry@example.com</p>
+            <p class="contact-value">adrien.patry@universite-paris-saclay.fr</p>
           </div>
         </div>
         <span class="contact-arrow">↗</span>
       </a>
-      <a href="tel:+330600000000" class="contact-item reveal reveal-delay-2">
+      <a href="tel:+330608404342" class="contact-item reveal reveal-delay-2">
         <div class="contact-item-left">
           <div class="contact-icon">📞</div>
           <div>
             <p class="contact-label">Téléphone</p>
-            <p class="contact-value">+33 06 00 00 00 00</p>
+            <p class="contact-value">+33 06 08 40 43 42</p>
           </div>
         </div>
         <span class="contact-arrow">↗</span>
       </a>
-      <a href="https://linkedin.com/in/adrienpatry" target="_blank" class="contact-item reveal reveal-delay-3">
+      <a href="https://linkedin.com/in/adrien-patry-541b37384" target="_blank" class="contact-item reveal reveal-delay-3">
         <div class="contact-item-left">
           <div class="contact-icon">💼</div>
           <div>
@@ -215,6 +190,15 @@
         </div>
         <span class="contact-arrow">↗</span>
       </a>
+      <a href="https://github.com/AdrienPatry" target="_blank" class="contact-item reveal reveal-delay-4">
+        <div class="contact-item-left">
+          <div class="contact-icon">🐙</div>
+          <div>
+            <p class="contact-label">GitHub</p>
+            <p class="contact-value">github.com/AdrienPatry</p>
+          </div>
+        </div>
+        <span class="contact-arrow">↗</span>
     </div>
   </section>
 
@@ -228,103 +212,69 @@
        MODALES PROJETS
        ============================== -->
 
-  <!-- Modale 01 -->
   <div class="modal-overlay" id="modal-01" onclick="closeModalOutside(event, 'modal-01')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-01')">✕</button>
       <p class="modal-num">01</p>
-      <h2 class="modal-title">Application de gestion de tâches</h2>
+      <h2 class="modal-title">Jeu simple en C++</h2>
       <div class="modal-tags">
-        <span class="project-tag">Python</span>
-        <span class="project-tag">Flask</span>
-        <span class="project-tag">SQL</span>
-        <span class="project-tag">HTML/CSS</span>
+        <span class="project-tag">C++</span>
+        <span class="project-tag">Projet en Groupe</span>
       </div>
-      <p class="modal-desc">Application web complète permettant de créer, organiser et suivre des tâches personnelles. L'application inclut un système d'authentification utilisateur, une base de données persistante et une interface responsive.</p>
+      <p class="modal-desc">Jeu simple top-down où le joueur contrôle un personnage pour collecter des objets et éviter les ennemis. Pour gagner, il faut que le joueur collecte l'ensemble des pièces sans se faire toucher.</p>
       <ul class="modal-features">
-        <li>Authentification sécurisée (login / register)</li>
-        <li>CRUD complet sur les tâches</li>
-        <li>Classement par priorité et date</li>
-        <li>Base de données SQLite avec SQLAlchemy</li>
+        <li>Contrôle du personnage avec les touches directionnelles</li>
+        <li>Collecte d'objets et évitement des ennemis</li>
       </ul>
       <div class="modal-actions">
-        <a href="https://github.com/adrienpatry/todo-app" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
+        <a href="https://github.com/AdrienPatry/ProjetCS1.git" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
       </div>
     </div>
   </div>
 
-  <!-- Modale 02 -->
   <div class="modal-overlay" id="modal-02" onclick="closeModalOutside(event, 'modal-02')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-02')">✕</button>
       <p class="modal-num">02</p>
-      <h2 class="modal-title">Jeu en réseau (Java)</h2>
+      <h2 class="modal-title">Jeu créer a l'occasion d'une Game Jam en Godot</h2>
       <div class="modal-tags">
-        <span class="project-tag">Java</span>
-        <span class="project-tag">Sockets</span>
-        <span class="project-tag">Swing</span>
+        <span class="project-tag">GDScript</span>
+        <span class="project-tag">Projet en Groupe</span>
       </div>
-      <p class="modal-desc">Jeu multijoueur en ligne développé en Java avec une architecture client-serveur. Les joueurs peuvent se connecter et s'affronter en temps réel via une interface graphique Swing.</p>
+      <p class="modal-desc">Jeu solo de pêche où la mécanique principale est le clic. Vous pouvez pêcher et il faut cliquer au bon moment pour attraper les poissons qui ont plusieurs raretés allant de commun à legendaire. Vous pouvez également acheter de meilleur canne à pêche qui augmentent vos chances d'avoir de meilleurs poissons.</p>
       <ul class="modal-features">
-        <li>Architecture client-serveur avec Java Sockets</li>
-        <li>Interface graphique avec Java Swing</li>
-        <li>Gestion multi-clients simultanés</li>
-        <li>Protocole de communication personnalisé</li>
+        <li>Mécanique de pêche basée sur le clic</li>
+        <li>Différents types de poissons avec des raretés variées</li>
+        <li>Système de progression avec achat de cannes à pêche améliorées</li>
+        <li>Systeme de Shop</li>
       </ul>
       <div class="modal-actions">
-        <a href="https://github.com/adrienpatry/jeu-reseau" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
+        <a href="" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
       </div>
     </div>
   </div>
 
-  <!-- Modale 03 -->
   <div class="modal-overlay" id="modal-03" onclick="closeModalOutside(event, 'modal-03')">
     <div class="modal">
       <button class="modal-close" onclick="closeModal('modal-03')">✕</button>
       <p class="modal-num">03</p>
-      <h2 class="modal-title">Interpréteur de commandes</h2>
-      <div class="modal-tags">
-        <span class="project-tag">C</span>
-        <span class="project-tag">Linux</span>
-        <span class="project-tag">POSIX</span>
-      </div>
-      <p class="modal-desc">Shell minimaliste développé en C sous Linux. Il supporte l'exécution de commandes système, la redirection des entrées/sorties, les pipes et la gestion de processus via les appels POSIX.</p>
-      <ul class="modal-features">
-        <li>Exécution de commandes système</li>
-        <li>Redirections stdin / stdout / stderr</li>
-        <li>Gestion des pipes entre commandes</li>
-        <li>Processus en arrière-plan (&)</li>
-      </ul>
-      <div class="modal-actions">
-        <a href="https://github.com/adrienpatry/shell-c" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modale 04 -->
-  <div class="modal-overlay" id="modal-04" onclick="closeModalOutside(event, 'modal-04')">
-    <div class="modal">
-      <button class="modal-close" onclick="closeModal('modal-04')">✕</button>
-      <p class="modal-num">04</p>
-      <h2 class="modal-title">Site portfolio</h2>
+      <h2 class="modal-title">Site d'Agence de Voyage</h2>
       <div class="modal-tags">
         <span class="project-tag">HTML</span>
         <span class="project-tag">CSS</span>
-        <span class="project-tag">JavaScript</span>
+        <span class="project-tag">Projet en Groupe</span>
       </div>
-      <p class="modal-desc">Ce site portfolio, conçu pour présenter mon parcours, mes compétences et mes projets de façon claire et épurée. Design minimaliste avec animations au scroll et modales interactives.</p>
+      <p class="modal-desc">Site web pour une agence de voyage imaginaire, permettant de promouvoir les destinations et de réserver des voyages. Il a été réalisé dans le cadre d'un projet lors de mes études. Le site promonvoit une agence qui propose des voyages dans des pays normalement difficile d'accès.</p>
       <ul class="modal-features">
-        <li>Design minimaliste full responsive</li>
-        <li>Animations CSS au scroll (IntersectionObserver)</li>
-        <li>Navigation fluide avec ancres</li>
-        <li>Modales projets sans dépendance externe</li>
+        <li>Design responsive</li>
+        <li>Pages détaillées pour chaque destination</li>
+        <li>Système de réservation intégré</li>
       </ul>
       <div class="modal-actions">
-        <a href="https://github.com/adrienpatry/portfolio" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
+        <a href="" target="_blank" class="btn btn-primary">Voir sur GitHub</a>
       </div>
     </div>
   </div>
-
   <script src="js/main.js"></script>
 </body>
 </html>
