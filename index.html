@@ -149,6 +149,19 @@
         </div>
         <span class="project-cta">Voir le détail →</span>
       </div>
+
+      <div class ="project-card" onclick = "openModal('modal-04')">
+        <p class="project-num">04</p>
+        <h3>Projet SAE en Java</h3>
+        <p>Creation d'une application qui repertorie des films.</p>
+        <div class="project-tags">
+          <span class="project-tag">Java</span>
+          <span class="project-tag">Swing</span>
+          <span class="project-tag">Git</span>
+          <span class="project-tag">VPP</span>
+          <span class="project-tag">Projet en Groupe</span>
+        </div>
+        <span class="project-cta">Voir le détail →</span>
     </div>
   </section>
 
@@ -275,6 +288,28 @@
       </div>
     </div>
   </div>
+
+  <div class="modal-overlay" id="modal-04" onclick="closeModalOutside(event, 'modal-04')">
+    <div class="modal">
+      <button class="modal-close" onclick="closeModal('modal-04')">✕</button>
+      <p class="modal-num">04</p>
+      <h2 class="modal-title">Projet SAE en Java</h2>
+      <div class="modal-tags">
+        <span class="project-tag">Java</span>
+        <span class="project-tag">Swing</span>
+        <span class="project-tag">Git</span>
+        <span class="project-tag">VPP</span>
+        <span class="project-tag">Projet en Groupe</span>
+      </div>
+      <p class="modal-desc">Creation d'une application qui repertorie des films. L'application permet d'ajouter des films à une liste, de les supprimer et de les marquer comme vus ou non vus. L'application utilise une interface graphique réalisée avec Swing.</p>
+      <ul class="modal-features">
+        <li>Interface graphique avec Swing</li>
+        <li>Gestion d'une liste de films avec ajout, suppression et marquage comme vu/non vu</li>
+      </ul>
+      <div class="modal-actions">
+        <a href="https://git.iut-orsay.fr/tkiecke/s2-sae-dev-app-gh8" target="_blank" class="btn btn-primary">Voir sur GitLab</a>
+      </div>
+    </div>
   <script src="js/main.js"></script>
 </body>
 </html>
